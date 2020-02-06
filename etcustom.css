@@ -1,6 +1,5 @@
 #body {
-	background: red url("img_tree.png") no-repeat right top;
-  margin-right: 200px;
+  background-color: red;
 }
 .text-block {
 	position: absolute;
