@@ -1,11 +1,3 @@
-body {
-  background-color: red;
-}
-
-h1 {
-  color: navy;
-  float: right;
-}
 .text-block {
 	position: absolute;
 	bottom: 120px;
