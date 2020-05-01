@@ -9,22 +9,18 @@
   padding: 0;
   box-sizing: border-box;  
 }
-
 .gallery-align {
   width: 100%;
   height: 100%;  
 }
-
 .gallery-align:hover {
   border: 0.5px solid #6244bb;  
 }
-
 .gallery-responsive {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 /*Shadow Container*/
 .gal-shw {
   position: relative;
@@ -32,25 +28,21 @@
   margin: auto;
   overflow: hidden;
 }
-
 .galshw-image {
   width: 100%;
 }
-
 /*Text Effects*/
 .galshw-details {
   position: absolute;  
 }
-
 /*Caption Text*/
-figcaption {
+.gal-caption {
 text-align: center;
 font-size: 1em;
 margin:5px;
 font-weight: 500;
 
 }
-
 /*ACCORDION CONTENT*/
 
 .ua_list {
@@ -58,55 +50,42 @@ font-weight: 500;
   padding: 0;
   list-style-type: none;
   width: auto;
-  height:auto;
-  
+  height:auto;  
 }
-
 .ua_inner-list {
   padding: 10px;
   overflow: auto;
   border-bottom: 1px solid #eee;
   -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  
+  background-clip: padding-box;  
 }
-
-
 .ua_inner-list:hover {
   background: #eee;
   cursor: pointer;
   transition: background 0.5s, opacity 1s;
   
 }
-
 .ua_inner-list a:link {
   text-decoration: none;
 }
-
 .ua_inner-list a:visited {
   text-decoration: none;
 }
-
 .ua_inner-list a:link {
     color: inherit;
 }
-
 .ua_inner-list a:visited {
   color: inherit;
 }
-
 /* mouse over link */
 .ua_inner-list a:hover {
   color: inherit;
 }
-
 /* selected link */
 .ua_inner-list a:active {
   color: inherit;
 }
-
 /*MOBILE VIEWPORT*/
-
 @media only screen and (max-width: 640px) {
   .img-gallery {
     margin: 0;
@@ -114,14 +93,12 @@ font-weight: 500;
     justify-content: center;
     row-gap: 50px;
     padding: 20px;
-  }
-  
-  figcaption {
+  }  
+  .gal-caption {
     text-align: center;
     font-size: 1.2em;
     margin-top: 5px;
-    }
-    
+    }    
     .gal-shw {
      overflow: visible;
     }
