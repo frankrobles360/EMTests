@@ -1,73 +1,10 @@
-/*Back to Top*/
+/*Gallery Container*/
+
 html,
   body {
     scroll-behavior: smooth;
   }
-.BtnTop {
-  display: none;
-  position: fixed;
-  bottom: 2px;
-  right: 3px;
-  z-index: 99;
-  font-size: 13px;
-  border: none;
-  outline: none;
-  background-color: #6244bb;
-  color: white;
-  cursor: pointer;
-  padding: 13px;
-  border-radius: 2px;
-  opacity: 0.7;
-}
 
-.BtnTop:hover {
-  background-color: #745ac4;
-  opacity: 1.0;
-}
-
-.no-show {
-  padding: 0 3rem;
-  position: relative;
-  max-width: auto;
-  margin: 0;
-}
-.no-show *:last-child {
-  margin-bottom: 0;
-}
-
-.back-to-top-wrapper {
-  position: absolute;
-  top: 300vh;
-  right: 0.25rem;
-  bottom: -5em;
-  width: auto;
-  pointer-events: none;
-}
-
-.back-to-top-link {
-  position: fixed;
-  position: -webkit-sticky;
-  position: sticky;
-  pointer-events: all;
-  top: calc(100vh - 5rem);
-  display: inline-block;
-  text-decoration: none;
-  
-  -webkit-transition: -webkit-transform 80ms ease-in;
-  transition: -webkit-transform 80ms ease-in;
-  transition: transform 80ms ease-in;
-  transition: transform 80ms ease-in, -webkit-transform 80ms ease-in;
-}
-.back-to-top-link:hover, .back-to-top-link:focus {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-.back-to-top-link:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.5px #6244bb;
-}
-
-/*Gallery Container*/
 .img-gallery {
   margin: 5px;
   display: grid;
@@ -171,4 +108,67 @@ font-weight: 500;
     .gal-shw {
      overflow: visible;
     }
+}
+.BtnTop {
+  display: none;
+  position: fixed;
+  bottom: 2px;
+  right: 3px;
+  z-index: 99;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  background-color: #6244bb;
+  color: white;
+  cursor: pointer;
+  padding: 13px;
+  border-radius: 2px;
+  opacity: 0.7;
+}
+
+.BtnTop:hover {
+  background-color: #745ac4;
+  opacity: 1.0;
+}
+
+.no-show {
+  padding: 0 3rem;
+  position: relative;
+  max-width: auto;
+  margin: 2rem auto;
+}
+.no-show *:last-child {
+  margin-bottom: 10px;
+}
+
+.back-to-top-wrapper {
+  position: absolute;
+  top: 100vh;
+  right: 0.25rem;
+  bottom: -5em;
+  width: auto;
+  pointer-events: none;
+}
+
+.back-to-top-link {
+  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  pointer-events: all;
+  top: calc(100vh - 5rem);
+  display: inline-block;
+  text-decoration: none;
+  
+  -webkit-transition: -webkit-transform 80ms ease-in;
+  transition: -webkit-transform 80ms ease-in;
+  transition: transform 80ms ease-in;
+  transition: transform 80ms ease-in, -webkit-transform 80ms ease-in;
+}
+.back-to-top-link:hover, .back-to-top-link:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.back-to-top-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5px #6244bb;
 }
