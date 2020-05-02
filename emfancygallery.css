@@ -172,3 +172,9 @@ font-weight: 500;
   outline: none;
   box-shadow: 0 0 0 0.5px #6244bb;
 }
+
+.ua-link {
+font-weight: 600;
+color: blue;
+text-decoration: underline;
+}
