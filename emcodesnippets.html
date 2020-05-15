@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" href="styles/custom.css">
+<style>
+    
+    .box{
+        color: #000;
+        padding: 10px;
+        display: none;
+        margin-top: 20px;
+    }
+    
+pre {  
+  overflow: auto;
+  width: auto;
+  padding: 10px;
+  background-color: #eee;  
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  resize: none;
+}
+</style>
+</head>
+<body>
+	
+    <h2>1. Qué es esta vaina? Pa qué sirve?</h2>
+	<h2>2. Cómo se usa - assets en CMS</h2>
+	<h2>3. Samples y Códigos</h2>
+	<h2>4. Add ons <BR> * Estilizar botones <BR> * Boton Full Width <BR> * Funciones JS - show more/less</h2>
+	<h2>5. Ejemplos prácticos</h2>
+	<p>Esta guía se refiere únicamente a CSS Buttons, utilizados tipicamente para dar estilos a links especificos. Los estilos han sido tomados del tema base de cada customer y algunos otros de ellos usan librerias de bootstrap.  Para mayor información información por favor consulte la guía: <a href="https://getbootstrap.com/docs/4.0/components/buttons/">Bootstrap Buttons</a></p>
+
+    <p>Todos los botones siguen una estructura de diseño más o menos similar, con algunas variaciones. Con base en esto, se han diseñado dos tipos: boton clásico y botón full width.</p>
+    <h3>Botón Clásico</h3>
+    <p>Típico botón fácilmente utilizable en cualquier página. Se adapta segun el ancho del texto que este dentro de éste.</p>
+    <button type="button" class="theme-btn">Classic Button</button>
+    <div class="frame"><strong>*modal box - show code*</strong></div>
+    <p></p>
+    <h3>Botón Full Width - Responsive</h3>
+    <p>Si requiere que el boton ocupe todo el ancho de la página mientas mantiene un comportamiento responsive, solo necesita agregar la clase <strong>"fw-btn"</strong> al código HTML del botón. El texto será automáticamente centrado.</p>
+    <button type="button" class="theme-btn fw-btn">Full Width Button</button>
+    <div class="frame"><strong>*modal box - show code*</strong></div>
+    <p></p>
+    <h3>Add ons</h3>
+    <p><strong>*Agregar sombra al botón.</strong> <br>Si desea agregar una sombra al botón para cambiar su estilo, solo agregue la clase <strong>"btn-shadow"</strong> al código HTML del botón.</p>
+    <p><strong>Ejemplo:</strong></p>
+    <button type="button" class="theme-btn btn-shadow">Classic Button</button>
+    <div class="frame"><strong>*modal box - show code*</strong></div>
+    <p></p>
+    <h3>Themed buttons by customer</h3>
+        <div>
+            <select>
+                <option>Select Customer</option>
+                <option value="a1">AA</option>
+                <option value="a2">AAV</option>
+                <option value="a3">AC</option>
+                <option value="a4">AM</option>
+                <option value="a5">LA</option>
+                <option value="a6">NK</option>
+                <option value="a7">P5</option>
+                <option value="a8">TP</option>
+                <option value="a9">UA</option>
+                <option value="a10">UX</option>
+                <option value="a11">Y4</option>
+            </select>
+        </div>
+                <!-- AA Content -->
+                    <!-- AA Button On -->
+                <div class="a1 box"><button type="button" class="theme-btn btn-aa">Search Flights</button>
+                        <div class="frame"><strong>*modal box - show code*</strong></div>
+                </div> <!-- AA Button Off -->
+                <!-- AAV Content -->
+                <div class="a2 box"><button type="button" class="theme-btn btn-aav">Search Flights</button>
+                    <div class="frame"><strong>*modal box - show code*</strong></div></div>
+                <!-- AC Content -->
+                <div class="a3 box"><button type="button" class="theme-btn btn-ac">Search Flights</button>
+                    <div class="frame"><strong>*modal box - show code*</strong></div></div>
+                <!-- AM Content -->
+                <div class="a4 box"><button type="button" class="theme-btn btn-am">Search Flights</button>
+                    <div class="frame"><strong>*modal box - show code*</strong></div></div>
+                <!-- LA Content -->
+                <div class="a5 box"><button type="button" class="theme-btn btn-la">Search Flights</button>
+                    <div class="frame"><strong>*modal box - show code*</strong></div>
+                <div class="a5 box"><button type="button" class="theme-btn btn-la-alt">Search Flights</button>
+                    <div class="frame"><strong>*modal box - show code*</strong></div></div></div>
+                <!-- NK Content -->
+                <div class="a6 box"><button type="button" class="theme-btn btn-nk">Search Flights</button>
+                    <div class="frame"><strong>*modal box - show code*</strong></div></div>
+                <!-- P5 Content -->
+                <div class="a7 box"><button type="button" class="theme-btn btn-p5 btn-shadow">Search Flights</button>
+                    <div class="frame"><strong>*modal box - show code*</strong></div>
+                <div class="a7 box"><button type="button" class="theme-btn btn-p5-alt btn-shadow">Search Flights</button>
+                    <div class="frame"><strong>*modal box - show code*</strong></div>
+                <div class="a7 box"><button type="button" class="theme-btn btn-p5-alt2 btn-shadow">Search Flights</button>
+                    <div class="frame"><strong>*modal box - show code*</strong></div></div> </div> </div>
+                <!-- TAP Content -->
+                <div class="a8 box"><button type="button" class="theme-btn btn-tp">Search Flights</button>
+                    <div class="frame"><strong>*modal box - show code*</strong></div></div>
+                <!-- United Content -->
+                <div class="a9 box"><button type="button" class="theme-btn btn-ua">Search Flights</button>
+                    <div class="frame"><strong>*modal box - show code*</strong></div></div>
+                <!-- Air Europa Content -->
+                <div class="a10 box"><button type="button" class="theme-btn btn-ux">Search Flights</button>
+                    <div class="frame"><strong>*modal box - show code*</strong></div></div>
+                <div class="a10 box"><button type="button" class="theme-btn btn-ux-alt">Search Flights</button>
+                    <div class="frame"><strong>*modal box - show code*</strong></div></div>
+                <!-- Volaris Content -->
+                <div class="a11 box"><button type="button" class="theme-btn btn-y4">Search Flights</button>
+                    <div class="frame"><strong>*modal box - show code*</strong></div></div>                   
+
+                <!-- END OF BUTTONS SECTION -->
+<p><strong>Disclaimer: esta vaina está en fase de desarrollo y podria no ajsutarse bien en todos los escenarios, así que, si desde una perspectiva de desempeño, funcionalidad, o el codigo mismo encuentra errores, por favor notifiquenos y procederemos a hacer las correcciones o y/o solicitar apoyo si se requiere.</strong></p>
+<script>
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".box").hide();
+            }
+        });
+    }).change();
+});
+</script>
+</body>
+</html>
